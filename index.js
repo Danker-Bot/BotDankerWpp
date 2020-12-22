@@ -19,7 +19,7 @@ const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
     A187: '📍DANKERBOT📍',
-    instagram: 'OFF',
+    instagram: '@dankerigeno',
     nomer: 'OFF',
     aktif: '24 JAM',
     youtube: 'OFF',
@@ -219,7 +219,7 @@ client.on('message-new', async (m) => {
            tiktokdl(value)
                .then(data => {
                     const { url, nama, durasi, deskripsi } = data
-                    let hasil = `✄1�71 ￄ 1/77 Sucesso !!! Clique no link abaixo para baixar os resultados! \nClique no link abaixo🗡️\n\nTítulo: ${deskripsi} \n\nDurasi: ${durasi}\n\nNome: ${nama}\n\nUrl: ${url}`;
+                    let hasil = `✄1�71 ￄ 1/77 ¡Bien! Haga click en el link de abajo \nClick en el link de abajo🗡️\n\nTítulo: ${deskripsi} \n\nDurasi: ${durasi}\n\nNome: ${nama}\n\nUrl: ${url}`;
                     client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -466,7 +466,7 @@ case 'puisi2':
            chord(value)
                .then(data => {
                    const { result } = data
-                   let hasil = `Aqui estão os acordes da música *${value}* querida ♥️\n\n  _${result}_ `
+                   let hasil = `Aquí están los acordes musicales *${value}* querida ♥️\n\n  _${result}_ `
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
