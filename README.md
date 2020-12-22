@@ -1,2 +1,2 @@
 # BotDankerWpp
-Bot para Whatsapp
+Bot Autofuncional para Whatsapp
