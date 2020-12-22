@@ -172,8 +172,8 @@ client.on('message-new', async (m) => {
            ytdl('mp3', value)
                .then(data => {
                    const { judul, size, hasil: link } = data
-                   let hasil = `OLA AQUI ESTA EK LINK DE MUSICA DA MSC\nCLIQUE EN EL LINK DE ABAJO:\nMUSICA: ${judul}\n\nTamanho Do audio: ${size}\n\nLink: ${link}`
-                   client.sendMessage(id, '[ESPERE UM POUCO...', MessageType.text)
+                   let hasil = `OLA AQUI ESTA EL LINK DE MUSICA DE MSC\nCLIQUE EN EL LINK DE ABAJO:\nMUSICA: ${judul}\n\nTamanho Do audio: ${size}\n\nLink: ${link}`
+                   client.sendMessage(id, '[ESPERA UN TOQUE...', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -185,7 +185,7 @@ client.on('message-new', async (m) => {
                .then(data => {
                    const { judul, size, hasil: link } = data
                    let hasil = `OLA AQUI ESTA EL LINK DE MUSICA DE MSC\nCLIQUE EN EL LINK DE ABAJO:\nMUSICA: ${judul}\n\nTamanho Do audio: ${size}\n\nLink: ${link}`
-                   client.sendMessage(id, '[ESPERE UM POUCO...', MessageType.text)
+                   client.sendMessage(id, '[ESPERA UN TOQUE...', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
