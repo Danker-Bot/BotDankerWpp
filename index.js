@@ -12,8 +12,8 @@ const config = {
     instagram: 'OFF',
     nomer: 'OFF',
     aktif: '24 JAM',
-    youtube: 'https://youtube.com/channel/UCRaC-6JyCW_iqbW1DbuXVxQ',
-    whatsapp: 'https://chat.whatsapp.com/KTlC0MXi3WJChdQeps5flt',
+    youtube: 'OFF',
+    whatsapp: 'OFF',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -196,7 +196,7 @@ client.on('message-new', async (m) => {
            tweetdl(value)
                .then(data => {
                     const { size, hasil: link } = data
-                    let hasil = `✄1�71ￄ1�77 Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nKlik link dibawah🗡️\n\nSize: ${size}\n\nLink: ${link}`
+                    let hasil = `✄1�71ￄ1�77 ¡Funcionó! Haga clic en el enlace de abajo para descargar los resultados\nKlik link\n\nSize: ${size}\n\nLink: ${link}`
                     client.sendMessage(id, '[ESPERE UM POUCO...', MessageType.text)
                     client.sendMessage(id, hasil ,MessageType.text)
                })
